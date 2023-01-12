@@ -7,3 +7,21 @@ o menor que el número que hemos introducido por teclado.
 A priori, el ordenador debe sortear números entre 0 y 10 para que sea más fácil
 el testeo y corrección de eventuales errores.
 '''
+import random
+
+numero = random.randint(0,10)
+mi_numero = int(input("¿Qué número quieres probar? "))
+
+if mi_numero == numero:
+    print("Ea, ya")
+elif mi_numero < numero:
+    print("El número secreto es mayor.")
+    mi_numero = int(input("¿Qué número quieres probar? "))
+
+
+
+
+
+
+
+
