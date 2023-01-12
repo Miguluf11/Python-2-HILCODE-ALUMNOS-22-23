@@ -12,13 +12,14 @@ import random
 numero = random.randint(0,10)
 mi_numero = int(input("¿Qué número quieres probar? "))
 
-if mi_numero == numero:
-    print("Ea, ya")
-elif mi_numero < numero:
-    print("El número secreto es mayor.")
-    mi_numero = int(input("¿Qué número quieres probar? "))
-
-
+while mi_numero != numero:
+    if mi_numero < numero:
+        print("El número secreto es mayor.")
+        mi_numero = int(input("¿Qué número quieres probar? "))
+    elif mi_numero > numero:
+        print("El número secreto es menor.")
+        mi_numero = int(input("¿Qué número quieres probar? "))
+print("Ea, has acertado el número!")
 
 
 
