@@ -8,6 +8,7 @@ A priori, el ordenador debe sortear números entre 0 y 10 para que sea más fác
 el testeo y corrección de eventuales errores.
 '''
 import random
+import time
 
 numero = random.randint(0,10)
 mi_numero = int(input("¿Qué número quieres probar? "))
@@ -20,9 +21,4 @@ while mi_numero != numero:
         print("El número secreto es menor.")
         mi_numero = int(input("¿Qué número quieres probar? "))
 print("Ea, has acertado el número!")
-
-
-
-
-
 
