@@ -13,16 +13,27 @@ menor número de turnos posible.
 
 import random
 
-jugador = int(input("Elija un numero entre 0 y 10 "))
-bot = random.randint(0,10)
+def adivinar(jugador, bot, intentos, MAX):
+    maximo = MAX
+    minimo = 0
+    while bot != jugador:
+        if bot < jugador:
+            print(f"El número {bot} es menor que el número secreto.")
+            minimo = bot + 1
+            bot = random.randint(minimo,maximo)
+        elif bot > jugador:
+            print(f"El número {bot} es mayor que el número secreto.")
+            maximo = bot - 1
+            bot = random.randint(minimo,maximo)
+        intentos += 1
 
+    return intentos
 
+MAX = 10000000000000000000000000000000
+jugador = int(input(f"Elija un numero entre 0 y {MAX} "))
+bot = random.randint(0,MAX)
+intentos = 0
+intentos = adivinar(jugador, bot, intentos, MAX)
 
-
-
-
-
-
-
-
-
+print(f"El ordenador ha acertado el número con {intentos} intentos")
+1865471546154415456

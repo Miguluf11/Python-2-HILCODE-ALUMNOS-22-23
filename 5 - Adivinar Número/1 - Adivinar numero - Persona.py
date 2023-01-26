@@ -20,5 +20,6 @@ while mi_numero != numero:
     elif mi_numero > numero:
         print("El número secreto es menor.")
         mi_numero = int(input("¿Qué número quieres probar? "))
+
 print("Ea, has acertado el número!")
 
