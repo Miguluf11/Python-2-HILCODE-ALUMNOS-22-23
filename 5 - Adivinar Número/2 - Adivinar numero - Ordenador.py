@@ -11,30 +11,33 @@ una manera que el ordenador pueda encontrar el número secreto en el
 menor número de turnos posible.
 '''
 import random
-
-numero = int(input("Elige un número"))
-máximo = 10
-ordenador = random.randint(0,máximo)
+mínimo = 0
+máximo = 100000
+numero = int(input(f"Elige un número entre {mínimo} y {máximo}: "))
+ordenador = random.randint(mínimo, máximo)
 intentos = 0
-def juego(numero,ordenador,intentos):
+def juego(numero,ordenador,intentos, máximo, mínimo):
+
     print (ordenador)
     while numero != ordenador:
         if numero > ordenador:
             intentos += 1
             print ("El número es mayor")
-            ordenador = random.randint(0,máximo)
+            mínimo = ordenador + 1
+            ordenador = random.randint(mínimo, máximo)
             print(ordenador)
         if numero < ordenador:
             intentos += 1
             print ("El número es menor")
-            ordenador = random.randint(0,máximo)
+            máximo = ordenador - 1
+            ordenador = random.randint(mínimo, máximo)
             print (ordenador)
         if numero == ordenador:
             intentos  += 1
-            print (ordenador)
             print("Es correcto")
             print ("Lo has hecho en", intentos, "intentos")
 
 
-juego(numero,ordenador,intentos)
+juego(numero,ordenador,intentos, máximo, mínimo)
+
 
