@@ -1,4 +1,4 @@
-'''
+ '''
 Semejante al proyecto anterior, vamos a hacer otro proyecto
 para adivinar números, sin embargo, nosotros somos los que
 decimos que número debe ser adivinado y el ordenador es el
