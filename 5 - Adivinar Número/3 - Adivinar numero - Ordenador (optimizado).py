@@ -25,7 +25,7 @@ def adivinar(MAX, numero, intentos):
     return bot, intentos
 
 
-MAX = 10000
+MAX = 10000000000000000000000000000000
 numero = input_numero(MAX)
 intentos = 0
 bot, intentos = adivinar(MAX, numero,intentos)

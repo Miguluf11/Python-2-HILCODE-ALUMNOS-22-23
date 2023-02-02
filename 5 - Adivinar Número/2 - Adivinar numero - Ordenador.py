@@ -1,4 +1,4 @@
- '''
+'''
 Semejante al proyecto anterior, vamos a hacer otro proyecto
 para adivinar números, sin embargo, nosotros somos los que
 decimos que número debe ser adivinado y el ordenador es el
@@ -36,4 +36,4 @@ intentos = 0
 intentos = adivinar(jugador, bot, intentos, MAX)
 
 print(f"El ordenador ha acertado el número con {intentos} intentos")
-1865471546154415456
+
