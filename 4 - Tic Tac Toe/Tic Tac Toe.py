@@ -130,19 +130,3 @@ if __name__ == "__main__":
             ganas_de_jugar = input("¡RESPUESTA INVALIDA!\n¿Quieres jugar otra vez? SI o NO ")
             ganas_de_jugar = ganas_de_jugar.upper()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
