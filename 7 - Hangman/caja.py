@@ -20,16 +20,3 @@ def crear_caja(MAX_HORIZONTAL, MAX_VERTICAL, texto):
         else:
             print(f"{espacios}")
     print(f"{base}")
-
-MAX_VERTICAL = 5
-MAX_HORIZONTAL = 21
-texto = "Hola, Clóvis"
-
-crear_caja(MAX_HORIZONTAL, MAX_VERTICAL, texto)
-
-crear_caja(MAX_HORIZONTAL=10, MAX_VERTICAL=3, texto="Hola, Magno")
-
-crear_caja(MAX_HORIZONTAL=35, MAX_VERTICAL=7, texto="Hola, Clóvis Magno")
-
-crear_caja(texto = "Buenas wuenas", MAX_VERTICAL = 8, MAX_HORIZONTAL = 50)
-

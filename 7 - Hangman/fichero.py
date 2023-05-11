@@ -1,5 +1,3 @@
-nombre_fichero = "fichero_palabras.txt"
-
 def leer_fichero(nombre_fichero):
     palabras = []
     with open(nombre_fichero, "r") as f:
@@ -8,8 +6,3 @@ def leer_fichero(nombre_fichero):
             palabras.append(palabra)
     f.close()
     return palabras
-
-palabras = leer_fichero(nombre_fichero)
-print(palabras)
-
-
