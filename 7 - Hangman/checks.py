@@ -1,11 +1,9 @@
 import palabras
 import inputs
 
-dict_especiales = {"A":"Á", "E":"É", "I":"Í", "O":"Ó", "U":"Ú", "N":"Ñ"}
-
-
-
-def checks(palabra, guiones, letra, dict_especiales):
+def checks(palabra, guiones, letra, vidas):
+    copia_guiones = guiones
+    dict_especiales = {"A":"Á", "E":"É", "I":"Í", "O":"Ó", "U":"Ú", "N":"Ñ"}
     lista_guiones = []
     tam = len(palabra)
 
@@ -25,8 +23,6 @@ def checks(palabra, guiones, letra, dict_especiales):
     for i in range(len(lista_guiones)):
         guiones = guiones + lista_guiones[i]
 
-    return guiones
-
-guiones = checks(palabra, guiones, letra, dict_especiales)
-
-
+    if guiones == copia_guiones:
+        vidas = vidas - 1
+    return guiones, vidas
